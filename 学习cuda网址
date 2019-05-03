@@ -1,0 +1,28 @@
+					    -----------------CUDA-----------------
+
+########################################
+学习网址：
+https://face2ai.com/category/program/cuda/
+
+
+########################################
+源码：
+https://github.com/Tony-Tan/CUDA_Freshman
+
+
+########################################
+CMakeLists.txt 需要参考如下：
+cmake_minimum_required(VERSION 2.6)
+
+project(cuda_test)
+
+find_package(CUDA REQUIRED)
+include_directories(${CUDA_INCLUDE_DIRS})
+include_directories("../include")
+
+CUDA_ADD_EXECUTABLE(sum_arrays sum_arrays.cu)
+
+								『整理』(版权属于谭升大佬)
+									作者：Merofine
+								        时间：2019 / 5 / 3
+					    -----------------CUDA-----------------
